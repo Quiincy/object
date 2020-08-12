@@ -1,0 +1,12 @@
+.btn-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    white-space: normal;
+    margin-left: 110px;
+/* восстанавливаем свойству значение по умолчанию */
+}
