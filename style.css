@@ -8,5 +8,44 @@
     font-size: 16px;
     white-space: normal;
     margin-left: 110px;
-/* восстанавливаем свойству значение по умолчанию */
+}
+
+.box {
+margin: 20px 200px;
+background:rgba(255,255,255, 0.3);
+}
+
+h3 {
+    color:black;
+    border: 1px solid white;
+    background: white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+
+}
+
+body{
+background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 150s linear infinite;
+  overflow-y: hidden;
+}
+
+
+.btn {
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
 }

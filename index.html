@@ -8,32 +8,34 @@
     <title>HW6</title>
 </head>
 <body>
-        <div class="container-fluid p-5">
+    <div class="box border border-white rounded-pill">
+        <div class="container p-5 col-sm-3 ">
             <h3>Tanya</h3>
-            <button class="btn btn-secondary " onclick="getSubjects(students[0])">Subject</button>
+            <button class="btn btn-warning " onclick="getSubjects(students[0])">Subject</button>
             <button class="btn btn-success " onclick="getAverageMark(students[0])">Average Mark</button>
             <button class="btn btn-info " onclick="getStudentInfo(students[0])">Info</button>
         </div>
-        <div class="container-fluid p-5">
+        <div class="container p-5 col-sm-3">
             <h3>Victor</h3>
-            <button class="btn btn-secondary " onclick="getSubjects(students[1])">Subject</button>
+            <button class="btn btn-warning " onclick="getSubjects(students[1])">Subject</button>
             <button class="btn btn-success " onclick="getAverageMark(students[1])">Average Mark</button>
             <button class="btn btn-info " onclick="getStudentInfo(students[1])">Info</button>
 
         </div>
-        <div class="container-fluid p-5">
+        <div class="container p-5 col-sm-3">
             <h3>Anton</h3>
-            <button class="btn btn-secondary " onclick="getSubjects(students[2])">Subject</button>
+            <button class="btn btn-warning " onclick="getSubjects(students[2])">Subject</button>
             <button class="btn btn-success " onclick="getAverageMark(students[2])">Average Mark</button>
             <button class="btn btn-info " onclick="getStudentInfo(students[2])">Info</button>
         </div>
-        <div class="container-fluid p-4">
+        <div class="container p-4 col-sm-3">
         
             <button type="button" class="btn btn-dark btn-circle" onclick="getStudentsNames(students)"><i class="fas fa-map"></i>Stud Names A-Z</button>
         </div>
-        <div class="container-fluid p-4">
+        <div class="container p-4 col-sm-3">
             <button class="btn btn-danger btn-circle" onclick="alert(getBestStudent(students))">Best Stud</button>
         </div>
+    </div>
         
     <script src="./main.js"></script>
 </body>
