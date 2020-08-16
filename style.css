@@ -13,11 +13,12 @@
 .box {
 margin: 20px 200px;
 background:rgba(255,255,255, 0.3);
+border: 1px solid white;
+border-radius: 25% 25% 25% 25%;
 }
 
 h3 {
     color:black;
-    border: 1px solid white;
     background: white;
     border-radius: 5px;
     width: fit-content;
@@ -48,4 +49,18 @@ background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ix
    100%{
     background-position:0px -3000px;
   }
+}
+
+
+@media screen and (max-width:920px){
+  .box {
+    margin: 20px 0px;
+    background: none;
+    border: none;
+ 
+    }
+    body{
+   overflow-y: visible;
+    }
+
 }
