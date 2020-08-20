@@ -25,14 +25,16 @@ const students = [{
   }];
 
 
-  function getSubjects(student) {
+ function getSubjects(student) {
     let subjects = [];
     for (let subject in student.subjects) {
       if (subject.includes("_")) subject = subject.replace("_", " ");
       subjects.push(subject[0].toUpperCase() + subject.slice(1));
     }
-    return alert(subjects);
+    return  document.getElementById("output_1").innerHTML = subjects;
   }
+
+
 
 
   function getAverageMark(student) {
@@ -43,7 +45,7 @@ const students = [{
     }
     let sum = marks.reduce((acc, number) => acc + +number, 0);
     let avrg =(Math.round((sum / marks.length) * 100) / 100);
-    return alert(avrg);
+    return document.getElementById("output_1").innerHTML = avrg;
   }
 
   function getStudentInfo(student) {
@@ -51,13 +53,13 @@ const students = [{
     info.course = student.course;
     info.name = student.name;
     info.mark = getAverageMark(student);
-    alert(JSON.stringify(info));
+    document.getElementById("output_1").innerHTML = JSON.stringify(info);
   }
 
   function getStudentsNames(students) {
     let sorted = [];
     students.map((student) => sorted.push(student.name));
-    return alert(sorted.sort());
+    return document.getElementById("output_1").innerHTML = sorted.sort();
   }
 
 
@@ -66,9 +68,9 @@ const students = [{
       student.averageMark = getAverageMark(student);
       return student;
     })
-    .sort((studentA, studentB) => studentB.averageMark - studentA.averageMark)[2];
+    .sort((studentA, studentB) => studentB.averageMark - studentA.averageMark)[0];
   
-    return bestStudent.name;
+    return document.getElementById("output_1").innerHTML = bestStudent.name;
   }
  
   function calculateWordLetters (str) {

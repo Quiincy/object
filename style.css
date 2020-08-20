@@ -1,6 +1,6 @@
 .btn-circle {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     text-align: center;
     padding-left: 0;
@@ -10,8 +10,9 @@
     margin-left: 110px;
 }
 
+
 .box {
-margin: 20px 200px;
+margin: 0px 200px;
 background:rgba(255,255,255, 0.3);
 border: 1px solid white;
 border-radius: 25% 25% 25% 25%;
@@ -23,10 +24,19 @@ h3 {
     border-radius: 5px;
     width: fit-content;
     padding: 5px;
-    margin: 0 auto;
+    margin: 0 100px;
     margin-bottom: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 
+}
+p {
+  width: 290px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background:grey;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
 body{
@@ -54,7 +64,7 @@ background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ix
 
 @media screen and (max-width:920px){
   .box {
-    margin: 20px 0px;
+    margin: 20px 30px;
     background: none;
     border: none;
  
@@ -62,5 +72,15 @@ background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ix
     body{
    overflow-y: visible;
     }
+    p {
+      width: 290px;
+      height: 40px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background:grey;
+      text-align: center;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    }
 
 }
+
